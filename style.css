@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: url(image/winter.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    padding: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgba(255,255,255,0.852);
+    margin-bottom: 50px;
+}
+
+.flex{
+    display: flex;
+}
+
+.grid{
+    display: grid;
+}
+
+.channel{
+    background-color: rgba(5,62,62,0.265);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(128,128,128,0.351);
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.menu-bar img, .top-nav img{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    opacity: 70%;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+li{
+    list-style: none;
+    margin: 20px;
+    display: flex;
+}
+
+h5{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+h4{
+    font-weight: 400;
+    color: white;
+    margin: 30px 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: 12px;
+}
+
+.menu-bar{
+    background-color: rgba(6,6,6,0.212);
+    backdrop-filter: blur(80px);
+    border: 1px solid rgba(128,128,128,0.301);
+    width: 15%;
+    height: 100%;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.17);
+
+}
+
+#logo{
+    opacity: 100%;
+    width: 30px;
+    height: 30px;
+}
+
+.menu-bar{
+    padding: 20px;
+}
+
+.menu-bar h3{
+    margin-top: 5px;
+    margin-left: -8px;
+    font-size: 15px;font-weight: 500;
+}
+
+img:hover, li:hover, h5:hover{
+    opacity: 100%;
+    transition: .3s;
+    color: white;
+}
+
+.nav-links{
+    margin-top: 20px;
+}
+
+/*  channel - page */
+
+.channel-page{
+    position: absolute;
+    top: 6%;
+    left: 10%;
+    width: 100%;
+}
+
+.top-nav{
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+.search-bar{
+    backdrop-filter: blur(40px);
+    width: 400px;
+    height: 40px;
+    background-color: rgba(240,240,255,0.17);
+    border-radius: 10px;
+    padding: 5px 0 0 0;
+    cursor: pointer;
+}
+
+.search-bar a{
+    text-decoration: none;
+    color: white;
+}
+
+.search-bar img{
+    padding-top: 5px;
+}
+
+#log{
+    border-radius: 50px;
+    opacity: 100%;
+    object-fit: cover;
+}
+
+button{
+    padding: 10px 20px;
+    color: white;
+    font-weight: 500;
+    font-size: 12px;
+    border-radius: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(248, 92, 92);
+    border: none;
+    cursor: pointer;
+}
+
+.option img{
+    margin: 10px 20px;
+}
+
+/*   cards  */
+
+.cards{
+    position: absolute;
+    top: 10%;
+    left: 22%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    margin-top: 50px;
+    overflow-y: scroll;
+    height: 75%;
+    overflow-x: hidden;
+}
+
+.card{
+    padding: 20px 20px 10px 20px;
+    background-color: rgba(255,255,255,0.211);
+    backdrop-filter: blur(20px);
+    margin: 10px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.413);
+    cursor: pointer;
+}
+
+.card img{
+    width: 280px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.card h3{
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: gray;
+}
+
+#mylogo{
+    opacity: 100%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+}
